@@ -1,0 +1,11 @@
+Dictionary File Found
+URL: http://10.38.1.111/fsocity.dic
+
+Notes:
+
+Appears to be a large wordlist, potentially used for brute-forcing login.
+
+Contains usernames like elliot, robot, mrrobot, etc.
+
+Can be used with tools like Hydra or Burp Suite for login attempts.
+
