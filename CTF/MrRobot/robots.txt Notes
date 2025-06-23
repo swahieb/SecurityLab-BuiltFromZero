@@ -1,0 +1,11 @@
+URL: http://10.38.1.111/robots.txt
+
+Content:
+
+makefile
+Copy
+Edit
+User-agent: *
+fsocity.dic
+key-1-of-3.txt
+Takeaway:  Two hidden files for enumeration and flag capture.
