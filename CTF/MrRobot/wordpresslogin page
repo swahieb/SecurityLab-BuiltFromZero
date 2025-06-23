@@ -1,0 +1,8 @@
+ Login Page Discovered
+URL: http://10.38.1.111/wp-login.php
+
+Notes:
+
+Default WordPress login screen.
+
+Next logical step is to enumerate usernames and brute-force credentials using fsocity.dic.
