@@ -1,0 +1,8 @@
+nmap -sS -sV -p- 10.38.1.111
+22/tcp – Closed (SSH)
+
+80/tcp – Open (Apache HTTP)
+
+443/tcp – Open (HTTPS - Apache)
+
+Summary: Only HTTP(S) is available for attack surface. SSH is closed, so no remote shell for now.
