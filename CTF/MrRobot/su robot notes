@@ -1,0 +1,21 @@
+This screenshot illustrates:
+
+Attempt to read key-2-of-3.txt denied under daemon
+
+Found hashed password in password.raw-md5
+
+Echoed hash to file (attempted cracking with rockyou.txt)
+
+Identified that hash corresponds to plaintext abcdefghijklmnopqrstuvwxyz
+
+Switched to robot user with:
+
+bash
+Copy
+Edit
+su robot
+Successfully escalated to robot with full shell access
+
+Takeaway:
+Recognizing and cracking exposed hashes can lead to vertical privilege escalation, enabling access to previously restricted resources.
+
