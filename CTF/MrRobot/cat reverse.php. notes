@@ -1,0 +1,24 @@
+This screenshot shows the final part of the custom reverse.php script after editing, with the full reverse shell logic written and saved.
+
+What’s Happening:
+
+Code reads from TCP socket and binds it to process I/O.
+
+Redirects input/output between the remote shell and attacker system.
+
+Script is now ready to be uploaded and triggered via the WordPress theme editor.
+
+Why It’s Important:
+
+Confirms that the reverse shell logic was fully injected.
+
+Ensures the shell can handle input/output over the connection correctly.
+
+Next Step:
+
+Upload this code into 404.php or any accessible PHP file on the target.
+
+Start listener and trigger the payload to get a shell.
+
+Takeaway:
+Thorough payload completion is crucial — cutting it short can result in a broken or unstable shell.
