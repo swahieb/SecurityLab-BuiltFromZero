@@ -1,0 +1,23 @@
+This screenshot captures the session after gaining a reverse shell on the target system as the daemon user. The following observations are noted:
+
+Navigated to /home/robot
+
+Tried to read key-2-of-3.txt:
+
+bash
+Copy
+Edit
+cat key-2-of-3.txt
+Result: Permission denied
+
+Able to view password.raw-md5
+
+Confirmed current user and host:
+
+bash
+Copy
+Edit
+whoami && hostname && id
+Output: daemon, Linux, and UID/GID confirms daemon user context
+
+This validates the need for privilege escalation to read the second key.
