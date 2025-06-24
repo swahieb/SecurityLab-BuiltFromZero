@@ -1,0 +1,39 @@
+Screenshot: Privilege Escalation to robot User & Nmap Enumeration
+This screenshot documents the transition from the daemon user to the robot user and an initial privilege escalation enumeration attempt using nmap.
+
+Key Points:
+
+Attempted to read key-2-of-3.txt as daemon:
+Permission denied
+
+Switched to robot user using:
+
+bash
+Copy
+Edit
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+Successfully became robot user
+
+Verified user context:
+
+bash
+Copy
+Edit
+whoami && id
+Output confirms: robot, UID=1001, GID=1001
+
+Performed SUID binary enumeration:
+
+bash
+Copy
+Edit
+find / -perm -u=s -type f 2>/dev/null | grep -v "proc"
+Confirmed nmap as SUID-enabled:
+
+bash
+Copy
+Edit
+nmap --version
+This confirms that privilege escalation via nmap may be possible (especially if it supports interactive mode via --interactive).
