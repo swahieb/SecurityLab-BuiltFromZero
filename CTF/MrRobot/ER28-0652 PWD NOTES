@@ -1,0 +1,20 @@
+This image confirms successful access to the WordPress admin panel using the credentials obtained from the Hydra brute-force attack.
+
+Details:
+
+Logged in as user: elliot
+
+WordPress Version: 4.3.1
+
+Theme: Twenty Fifteen
+
+Access URL: http://10.38.1.111/wp-admin/
+
+Purpose:
+
+Confirms that the password cracked (ER28-0652) was valid.
+
+Sets the stage for uploading/modifying a reverse shell via theme editor under Appearance > Editor.
+
+Takeaway: Once inside the admin dashboard, attackers can escalate access by uploading malicious PHP code to gain system-level access.
+
