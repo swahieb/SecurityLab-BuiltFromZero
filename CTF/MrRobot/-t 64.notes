@@ -1,0 +1,20 @@
+This image shows the continuation of Hydra's brute-force attack on the WordPress login, attempting multiple passwords from the fsocity.dic wordlist using the -t 64 option to increase threads.
+
+Command Context:
+
+bash
+Copy
+Edit
+hydra -l elliot -P fsocity.dic -t 64 10.38.1.111 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In:F=Invalid username"
+Highlights:
+
+Multiple valid username/password pairs detected.
+
+Hydra ran with 64 parallel tasks for faster cracking.
+
+Eventually identified ER28-0652 as the correct password.
+
+Shows fsocity.dic had many plausible logins but only one succeeded in logging in.
+
+Takeaway: Thread tuning can significantly speed up brute-force attacks, especially when dealing with large dictionaries.
+
