@@ -1,0 +1,19 @@
+This screenshot captures the moment the reverse shell was successfully established using Netcat (nc -lvp 1234).
+
+Key Evidence:
+
+Connection received from the target machine 10.38.1.111 to attacker's listener.
+
+Shell spawned as user daemon.
+
+Remote system is identified as Ubuntu 3.13.0-55.
+
+Note:
+
+Message /bin/sh: 0: can't access tty; job control turned off is expected in limited shells.
+
+Indicates basic shell access, good enough to escalate privileges from here.
+
+Takeaway:
+Confirms the reverse shell payload worked, and the foothold is established on the target system.
+
