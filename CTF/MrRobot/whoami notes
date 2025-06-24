@@ -1,0 +1,23 @@
+Reverse shell improvement using:
+
+bash
+Copy
+Edit
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+export TERM=xterm
+These commands make the shell behave more like a fully interactive terminal.
+
+Directory enumeration inside /home:
+
+Discovered robot user's home directory.
+
+Found key-2-of-3.txt (permission denied) and password.raw-md5.
+
+Confirmed shell is running as daemon with:
+
+bash
+Copy
+Edit
+whoami
+Takeaway:
+This step is critical for identifying privilege escalation opportunities by locating protected files and understanding user contexts.
