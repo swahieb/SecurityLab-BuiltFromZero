@@ -1,0 +1,29 @@
+Final Key Extraction (key-3-of-3.txt)
+This screenshot captures the final stage of privilege escalation and flag retrieval:
+
+Steps and Highlights:
+
+User attempted to switch to robot using the MD5 password hash found in password.raw-md5, cracked as:
+
+nginx
+Copy
+Edit
+abcdefghijklmnopqrstuvwxyz
+The user encountered "must be run from a terminal" errors but successfully bypassed them with:
+
+bash
+Copy
+Edit
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+After switching to the robot user and resolving shell issues, the final flag was accessed:
+
+bash
+Copy
+Edit
+cat /root/key-3-of-3.txt
+Final Flag Extracted:
+
+Copy
+Edit
+04787ddef27c3dee1e161b21670b4e4
+This confirms full privilege escalation to the root user and successful capture of the third and final key in the Mr. Robot CTF.
