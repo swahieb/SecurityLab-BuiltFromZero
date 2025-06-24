@@ -1,0 +1,14 @@
+This screenshot captures the command used to enumerate SUID binaries on the target system using:
+
+bash
+Copy
+Edit
+find / -perm -4000 2>/dev/null
+Among the results, nmap appears with the SUID bit set, which is critical for privilege escalation. It can be used to spawn a shell as root by entering interactive mode with:
+
+bash
+Copy
+Edit
+nmap --interactive
+!sh
+This was the pivot point that allowed escalation from the robot user to full root access.
