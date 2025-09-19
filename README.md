@@ -1,6 +1,6 @@
 # 🛡️ Security Lab: Built from Scratch
 
-A fully self-built cybersecurity lab designed to simulate real-world ethical hacking scenarios in a secure, offline environment. This project demonstrates my ability to plan, configure, troubleshoot, and operate a penetration testing lab — entirely from scratch — using real tools, real methods, and real vulnerable machines.
+A fully self-built cybersecurity lab designed to simulate real-world ethical hacking scenarios in a secure, offline environment. This project demonstrates my ability to plan, configure, troubleshoot, and operate a penetration testing lab  entirely from scratch — using real tools, real methods, and real vulnerable machines.
 
 ---
 
